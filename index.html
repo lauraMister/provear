@@ -11,13 +11,11 @@
   <!-- GLTFLoader -->
   <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
   <style>
-    #startButtonContainer {
+    #startButton {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
-    #startButton {
       background-color: red;
       color: white;
       padding: 15px 30px;
@@ -30,10 +28,7 @@
 </head>
 <body>
 
-<div id="startButtonContainer">
-  <button id="startButton">via!</button>
-</div>
-
+<button id="startButton">via!</button>
 <script>
   async function activateXR() {
     // Add a canvas element and initialize a WebGL context that is compatible with WebXR.
