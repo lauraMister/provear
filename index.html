@@ -62,7 +62,7 @@
 
     // Load the GLTF model of the frog
     const loader = new THREE.GLTFLoader();
-    loader.load('path_to_your_frog_model.gltf', function (gltf) {
+    loader.load('scene.gltf', function (gltf) {
       const frog = gltf.scene;
       frog.scale.set(4, 4, 4); // Quadruple the scale
       scene.add(frog);
