@@ -62,8 +62,10 @@
 
     // Load the GLTF model of the frog
     const loader = new THREE.GLTFLoader();
-    loader.load('https://github.com/lauraMister/provear/blob/main/scene.gltff', function (gltf) {
-      scene.add(gltf.scene);
+    loader.load('path_to_your_frog_model.gltf', function (gltf) {
+      const frog = gltf.scene;
+      frog.scale.set(4, 4, 4); // Quadruple the scale
+      scene.add(frog);
     });
 
     // A 'local' reference space has a native origin that is located
